@@ -80,6 +80,21 @@ int main()
     float n3=(float)n1/n2; // try cast by dev
     cout<<n3<<endl;
 
+    //ex1
+    int a2,b5;
+    cout<<"a=";
+    cin>>a2;
+    cout<<"b=";
+    cin>>b5;
+    cout<<"a+b="<<a2+b5<<endl;
+    cout<<"a-b="<<a2-b5<<endl;
+    printf("a+b=%d\n",a2+b5);
+    printf("a-b=%d\n",a2-b5);
+    //ex2
+    char chuthuong;
+    cout<<"chu cai viet thuong:"<<endl;
+    cin>>chuthuong;
+    cout<<"chu cai viet hoa:"<<(char)(chuthuong-32)<<endl;
 
 
 
