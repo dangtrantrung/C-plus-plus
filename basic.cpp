@@ -64,6 +64,22 @@ int main()
     int next_age=++age;
     cout<<age<<endl<<next_age<<endl;
 
+    //relational and logic operator
+    bool b2=true&&true;
+    bool d=false||true;
+    bool f =!((b2==d)and(b2>d));
+    cout<<b2<<endl<<d<<endl<<f<<endl;
+    //type cast and ASCII
+    int ch='a';
+    cout<<ch<<endl; // compiler auto cast ch 'a' from ASCII->int (decimal 97)
+    int ch1='A';
+    cout<<ch1<<endl; // compiler auto cast ch 'A' from ASCII->int (decimal 65)
+    cout<<(char)(ch1+32)<<endl; // compiler auto cast ch1 'A' from ASCII->int (decimal 65) +32=97->dev try cast (97) to ASCII='a'
+    int n1=3;
+    int n2=2;
+    float n3=(float)n1/n2; // try cast by dev
+    cout<<n3<<endl;
+
 
 
 
