@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#define pi 3.141591
 
 using namespace std;
 
@@ -49,7 +50,19 @@ int main()
         }
 
     }
-
+    //constant
+    const double PI=3.14159;
+    cout <<"define macro pi= "<<pi<<endl;
+    //assign method & operator
+    int i2=1.4;
+    int a=6,b=4;
+    int c=a/b;
+    float c1=(float)a/b;
+    int c2=a/b;
+    cout<<i2<<endl<<c<<endl<<c1<<endl<<c2<<endl;
+    int age=16;
+    int next_age=++age;
+    cout<<age<<endl<<next_age<<endl;
 
 
 
