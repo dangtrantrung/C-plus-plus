@@ -92,11 +92,12 @@ int main()
     printf("a-b=%d\n",a2-b5);
     //ex2
     char chuthuong;
-    cout<<"chu cai viet thuong:"<<endl;
+    cout<<"chu cai viet thuong:";
     cin>>chuthuong;
     cout<<"chu cai viet hoa:"<<(char)(chuthuong-32)<<endl;
 
-
+    //ex3
+    
 
 
     return 0;
