@@ -16,4 +16,10 @@ int main(){
         }
 
     }
+    while (n>0){
+        cout<<n<<",";
+        --n;
+    }
+    cout<<"liftoff!\n";
+
 }
