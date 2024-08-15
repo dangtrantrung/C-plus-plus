@@ -31,6 +31,13 @@ int main(){
         cout<<"You entered:"+str<<endl;
 
      }while (str!="goodbye");
+    //range-based for loop
+    string str1{"Hello! C++"};
+    for (char c:str1){
+        cout<<"["<<c<<"]";
+    }
+    cout<<'\n';
+
 
 
 
