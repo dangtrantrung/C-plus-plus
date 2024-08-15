@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <string>
 
 using namespace std;
 int main(){
@@ -21,5 +22,16 @@ int main(){
         --n;
     }
     cout<<"liftoff!\n";
+
+    //echo machine
+    string str;
+    do{
+        cout<<"Enter text:";
+        cin>>str;
+        cout<<"You entered:"+str<<endl;
+
+     }while (str!="goodbye");
+
+
 
 }
