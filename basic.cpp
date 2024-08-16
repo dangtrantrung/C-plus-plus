@@ -97,7 +97,18 @@ int main()
     cout<<"chu cai viet hoa:"<<(char)(chuthuong-32)<<endl;
 
     //ex3
-    
+    int a,b;
+    cout<<"nhap a=";
+    cin>>a;
+    cout<<"nhap b=";
+    cin>>b;
+    if(a==0&&b==0) cout<<"Pt co vo so nghiem";
+    else if(a==0&&b!=0) cout<<"Pt vo nghiem";
+    else cout<<"Pt có nghiệm duy nhất là x=-b/a="<<(float)-b/a;
+
+return 0;
+}
+
 
 
     return 0;
