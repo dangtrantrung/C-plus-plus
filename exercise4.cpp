@@ -33,6 +33,7 @@ int main(){
      }while (str!="goodbye");
     //range-based for loop
     string str1{"Hello! C++"};
+    const char chararray("Heloo");
     for (char c:str1){
         cout<<"["<<c<<"]";
     }
