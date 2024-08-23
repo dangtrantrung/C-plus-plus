@@ -23,5 +23,6 @@ int main(){
     *py=temp;
     cout<<"x="<<x<<endl;
     cout<<"y="<<y<<endl;
+    //mallloc,free, if, new,delete, void pointer void *pointer
     return 0;
 }
