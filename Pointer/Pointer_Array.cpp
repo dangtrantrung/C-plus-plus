@@ -17,7 +17,10 @@ p1=numbers+3;*p1=40;
 p1=numbers;*(p1+4)=50;
 for (int i=0;i<5;i++)cout<<numbers[i]<<",";
 
-
-
+//input-output array by pointer
+int b[10],*p2;
+p2=b;
+for (int i=0;i<10;i++) cin>>*(p2+i);
+for (int i=0;i<10;i++) cout<<*(p2+i)<<endl;
 return 0;
 }
