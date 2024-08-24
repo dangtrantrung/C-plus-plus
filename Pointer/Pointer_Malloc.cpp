@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 int main(){
@@ -55,10 +56,12 @@ int main(){
    pa=&a;
    pf=&f;
    pvoid=&a;
-   cout<<" int pointer void="<<*((int*)pvoid);
+   cout<<" int pointer void="<<*((int*)pvoid)<<endl<<*((int*)pvoid)+10;
    pvoid=&f;
-   cout<<"\n float pointer void="<<*((float*)pvoid)<<endl;
-
+   cout<<"\n float pointer void="<<*((float*)pvoid)<<endl<<*((float*)pvoid)+1.23;
+  //NULL pointer
+   int *pnull;
+   cout<<"gia tri con tro null="<<*pnull;
 
 
 }
