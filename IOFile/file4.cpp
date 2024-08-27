@@ -14,11 +14,11 @@ int main(){
 fstream myFile("data.txt",ios::in);
 char a[80];
 //tu byte thu 2 moi doc;
-//f.seekg(2);
+//myFile.seekg(2);
 while(!myFile.eof())
 {
     //tu vi tri hien tai nhay 2 byte
-    //f.seekg(2,ios::cur)
+    myFile.seekg(2,ios::cur);
     myFile>>a;
     cout<<"Gia tri:"<<a;
     cout<<endl;
