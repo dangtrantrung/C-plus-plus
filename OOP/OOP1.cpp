@@ -1,6 +1,7 @@
 #include <iostream>
 #include <malloc.h>
 #include <time.h>
+#include <stdlib.h>
 using namespace std;
 int x=10;
 int main(){
@@ -23,9 +24,17 @@ int main(){
     cin>>n;
     int* p1;
     p1= new int[n];
-   for(int i=0;i<n;i++){
-    cout<<"nhap phan tu thu"<<i<<endl;
-    cin>>*(p+i);
+//    for(int i=0;i<n;i++){
+//     cout<<"nhap phan tu thu"<<i<<endl;
+//     cin>>*(p+i);
+//    }
+srand((unsigned)time(NULL));
+for(int i=0;i<n;i++){
+    *(p+i)=rand()%99+1;
+}
+for(int i=0;i<n;i++){
+
+    cout<<"mang random la:"<<*(p+i)<<"\t";
    }
    for(int i=0;i<n-1;i++){
     for (int j=i+1;j<n;j++){
@@ -33,12 +42,12 @@ int main(){
             swap(*(p+i),*(p+j));
         }
     }
+
    }
-   for(int i=0;i<n;i++){
+    cout<<"mang random swap la:"<<endl;
+    for(int i=0;i<n;i++){
 
     cout<<*(p+i)<<"\t";
    }
-
-
     return 0;
 }
