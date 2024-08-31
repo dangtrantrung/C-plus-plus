@@ -43,10 +43,9 @@ class People{
   void Talk(){
     cout<<"Hello"<<endl;
   }
-  void Info(){
+  virtual void Info() {
     cout<<"Name:"<<name<<"-Age:"<<age<<endl;
   }
-
 
 };
 // class Man:private People{
@@ -57,8 +56,8 @@ class Man:public People{
     string address="bdf";
     int exp=15;
     public:
-    void Info(){
-         cout<<"Name:"<<name<<"-Age:"<<age<<"address:"<<address<<"exp:"<<exp<<endl;
+    void Info() override {
+         cout<<"address:"<<address<<"exp:"<<exp<<endl;
     }
 };
 
@@ -74,7 +73,7 @@ int main(){
     a.Info();
     a.Talk();
     Man man;
-    man.Info();//private
+    man.Info();//private, override
 
     return 0;
 }
