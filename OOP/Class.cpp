@@ -25,6 +25,27 @@ class Student{
     cout<<"ID:"<<id<<"-Name:"<<name<<"-Age:"<<age<<endl;
   }
 };
+class People{
+  private:
+    string name;
+    int age;
+
+  public:
+  People(){
+   name="abc";
+   age=19;
+  }
+  //~ destructor
+  ~People(){
+    cout<<"Destroy object";
+  }
+  void Talk(){
+    cout<<"Hello"<<endl;
+  }
+  void Info(){
+    cout<<"Name:"<<name<<"-Age:"<<age<<endl;
+  }
+};
 
 int main(){
 
@@ -34,5 +55,8 @@ int main(){
     studentA.Learn();
     studentA.Play();
     studentA.Info();
+    People a;
+    a.Info();
+    a.Talk();
     return 0;
 }
