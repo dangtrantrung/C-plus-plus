@@ -29,7 +29,8 @@ class People{
   private:
     string name;
     int age;
-
+  protected:
+     string favourite[5];
   public:
   People(){
    name="abc";
@@ -45,6 +46,20 @@ class People{
   void Info(){
     cout<<"Name:"<<name<<"-Age:"<<age<<endl;
   }
+
+
+};
+// class Man:private People{
+//     string adrress;
+//     int exp;
+// };
+class Man:public People{
+    string address="bdf";
+    int exp=15;
+    public:
+    void Info(){
+         cout<<"Name:"<<name<<"-Age:"<<age<<"address:"<<address<<"exp:"<<exp<<endl;
+    }
 };
 
 int main(){
@@ -58,5 +73,8 @@ int main(){
     People a;
     a.Info();
     a.Talk();
+    Man man;
+    man.Info();//private
+
     return 0;
 }
