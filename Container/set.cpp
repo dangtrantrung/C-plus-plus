@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 #include <set>
 using namespace std;
 
@@ -35,6 +35,10 @@ int main(){
     cout<<*s1.end()<<endl;
     for(auto x:s1) cout<<x<<"-";
     cout<<endl;
+    for(set<int>::iterator it=s1.begin();it!=s1.end();++it )
+    {
+        cout<<*it<<" ";
+    }
 
     return 0;
 }
