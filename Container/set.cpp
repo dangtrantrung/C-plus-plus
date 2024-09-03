@@ -26,6 +26,15 @@ int main(){
     cout<<s1.size()<<endl;
     if(s1.find(9)!=s1.end()) cout<<"Found 9 in set"<<endl;
     else cout<<"Not found 9"<<endl;
+    //erase by iterator
+    s1.erase(s1.find(6));
+    for(int x:s1) cout<<x<<",";
+    cout<<endl;
+    cout<<*s1.begin()<<endl;
+    cout<<*s1.rbegin()<<endl;
+    cout<<*s1.end()<<endl;
+    for(auto x:s1) cout<<x<<"-";
+    cout<<endl;
 
     return 0;
 }
