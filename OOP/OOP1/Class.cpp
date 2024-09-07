@@ -11,7 +11,7 @@ class Character{
     void attack(Character &target){
 
     }
-    void takeHP(int healthpoint){
+    void takeHP(int healthPoint){
 
     }
     void changeWeapon(string newWeapon,int dmgNewWeapon){
