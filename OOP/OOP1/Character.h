@@ -2,10 +2,13 @@
 #define DEF_CHARACTER
 #include <string>
 class Character{
-    //methods:
+
     public:
     //overloading default constructor
     Character(std::string weapon,int dmgWeapon);
+    //copy constructor
+    Character(Character const& anotherCharacter);
+    //methods:
     void takeDamage(int damage){
 
     }

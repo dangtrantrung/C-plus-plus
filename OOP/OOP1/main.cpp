@@ -5,7 +5,8 @@
 using namespace std;
 
 int main(){
-    Character david, goliah;
+    Character david, goliah("Iron Sword",20);
+    Character david1(goliah);//copy constructor
     goliah.attack(david);
     david.takeHP(20);
     goliah.attack(david);

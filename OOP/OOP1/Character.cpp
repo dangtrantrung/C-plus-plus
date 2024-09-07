@@ -11,7 +11,10 @@ Character::Character():m_hp(100),m_mp(100),m_weapon("Wooden Sword"),m_dmgWeapon(
 }
 //Overloading default constructor
 Character::Character(string weapon, int dmgWeapon):m_hp(100),m_mp(100),m_weapon(weapon),m_dmgWeapon(dmgWeapon){
-
+//copy constructor
+Character::Character(Character const& anotherCharacter):m_hp(anotherCharacter.m_hp),m_mp(anotherCharacter.m_mp),m_weapon(anotherCharacter.m_weapon),m_dmgWeapon(anotherCharacter.m_dmgWeapon){
+    
+}
 
 
 void Character::takeDamage(int damage){
