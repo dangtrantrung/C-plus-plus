@@ -2,6 +2,17 @@
 #include <string>
 
 using namespace std;
+//default constructor
+Character::Character():m_hp(100),m_mp(100),m_weapon("Wooden Sword"),m_dmgWeapon(10){
+    // m_hp = 100;
+    // m_mp = 100;
+    // m_weapon = "Wooden Sword";
+    // m_dmgWeapon = 10;
+}
+//Overloading default constructor
+Character::Character(string weapon, int dmgWeapon):m_hp(100),m_mp(100),m_weapon(weapon),m_dmgWeapon(dmgWeapon){
+
+
 
 void Character::takeDamage(int damage){
     m_hp-=damage;

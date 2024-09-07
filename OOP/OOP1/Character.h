@@ -4,6 +4,8 @@
 class Character{
     //methods:
     public:
+    //overloading default constructor
+    Character(std::string weapon,int dmgWeapon);
     void takeDamage(int damage){
 
     }
