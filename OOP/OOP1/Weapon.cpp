@@ -1,5 +1,6 @@
 #include "Weapon.h"
 #include <string>
+#include <iostream>
 using namespace std;
 
 Weapon::Weapon():m_name("Wooden Sword"),m_damage(10){

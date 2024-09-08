@@ -1,3 +1,4 @@
+
 #ifndef DEF_CHARACTER
 #define DEF_CHARACTER
 #include <string>
@@ -15,18 +16,10 @@ class Character{
     //because we did not use new - dynamic memory allocation
     // ~Character();
     //methods:
-    void takeDamage(int damage){
-
-    }
-    void attack(Character &target){
-
-    }
-    void takeHP(int healthpoint){
-
-    }
-    void changeWeapon(std::string newWeapon,int dmgNewWeapon){
-
-    }
+    void takeDamage(int damage);
+    void attack(Character &target);
+    void takeHP(int healthpoint);
+    void changeWeapon(std::string newWeapon,int dmgNewWeapon);
     bool isAlive() const;
     void printStatus() const;
 
