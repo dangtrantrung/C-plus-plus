@@ -8,6 +8,9 @@ class Character{
     Character(std::string weapon,int dmgWeapon);
     //copy constructor
     Character(Character const& anotherCharacter);
+    //destructor - no need to create destructor
+    //because we did not use new - dynamic memory allocation
+    ~Character();
     //methods:
     void takeDamage(int damage){
 
@@ -28,6 +31,6 @@ class Character{
     int m_hp;
     int m_mp;
     std::string m_weapon;
-    int m_dmgWeaponl;
+    int m_dmgWeapon;
 };
 #endif
