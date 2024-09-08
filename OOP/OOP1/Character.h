@@ -1,16 +1,19 @@
 #ifndef DEF_CHARACTER
 #define DEF_CHARACTER
 #include <string>
+#include "Weapon.h"
 class Character{
 
     public:
+    //default constructor:
+    Character();
     //overloading default constructor
     Character(std::string weapon,int dmgWeapon);
     //copy constructor
     Character(Character const& anotherCharacter);
     //destructor - no need to create destructor
     //because we did not use new - dynamic memory allocation
-    ~Character();
+    // ~Character();
     //methods:
     void takeDamage(int damage){
 
@@ -25,12 +28,12 @@ class Character{
 
     }
     bool isAlive() const;
+    void printStatus() const;
 
     //properties:
     private:
     int m_hp;
     int m_mp;
-    std::string m_weapon;
-    int m_dmgWeapon;
+    Weapon m_weapon;
 };
 #endif
