@@ -40,7 +40,7 @@ void Character::changeWeapon(string newWeapon, int dmgNewWeapon){
     m_weapon=newWeapon;
     m_dmgWeapon=dmgNewWeapon;
 }
-bool Character::isAlive(){
+bool Character::isAlive() const {
     if(m_hp>0)return true;
     else return false;
 }

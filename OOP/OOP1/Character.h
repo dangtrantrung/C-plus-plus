@@ -24,7 +24,7 @@ class Character{
     void changeWeapon(std::string newWeapon,int dmgNewWeapon){
 
     }
-    bool isAlive();
+    bool isAlive() const;
 
     //properties:
     private:
