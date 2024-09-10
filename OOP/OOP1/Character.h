@@ -22,6 +22,8 @@ class Character{
     bool isAlive() const;
     void printStatus() const;
     Character* getAddress() const;
+    //override operator =
+    Character& operator=(Character const& anotherCharacter);
     //properties:
     private:
     int m_hp;
