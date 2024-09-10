@@ -1,4 +1,3 @@
-
 #ifndef DEF_CHARACTER
 #define DEF_CHARACTER
 #include <string>
@@ -14,7 +13,7 @@ class Character{
     Character(Character const& anotherCharacter);
     //destructor - no need to create destructor
     //because we did not use new - dynamic memory allocation
-    // ~Character();
+    ~Character();
     //methods:
     void takeDamage(int damage);
     void attack(Character &target);
@@ -22,11 +21,12 @@ class Character{
     void changeWeapon(std::string newWeapon,int dmgNewWeapon);
     bool isAlive() const;
     void printStatus() const;
-
+    Character* getAddress() const;
     //properties:
     private:
     int m_hp;
     int m_mp;
-    Weapon m_weapon;
+    // Weapon m_weapon;
+    Weapon *m_weapon; //pointer
 };
 #endif
