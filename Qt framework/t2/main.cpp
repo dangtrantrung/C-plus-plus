@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
         window.setFixedSize(300, 150);
 
         //create a button in window
-        QPushButton nutBam("Alert !", &window);
-        nutBam.setFont(QFont("Comic Sans MS", 14));
-        nutBam.setCursor(Qt::PointingHandCursor);
+        QPushButton btn("Alert !", &window);
+        btn.setFont(QFont("Comic Sans MS", 14));
+        btn.setCursor(Qt::PointingHandCursor);
 
         window.show();
 
