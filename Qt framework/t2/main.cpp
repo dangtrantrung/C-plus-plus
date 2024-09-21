@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 //     QQmlApplicationEngine engine;
 //     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 //     QPushButton btn("Hello Fresher C++!");
-//     //
+//
 //     btn.show();
 //     return app.exec();
         QApplication app(argc, argv);
