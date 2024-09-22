@@ -7,6 +7,11 @@
 #include <QLCDNumber>
 #include <QSlider>
 #include <QProgressBar>
+#include <QMessageBox>
+#include <QInputDialog>
+#include <QFontDialog>
+#include <QColorDialog>
+#include <QFileDialog>
 
 class window:public QWidget
 {
@@ -20,8 +25,10 @@ private:
     QLCDNumber *m_lcd;
     QSlider *m_slider;
     QProgressBar *m_progressBar;
+    QPushButton *m_btn_dialog;
 public slots:
     void changeWidthofWindow(int w);
+    void openDialog();
 signals:
     void maxSize();
 
