@@ -35,4 +35,7 @@ window::window(int h, int w):QWidget()
 window::~window()
 {
   delete m_btn;
+  delete m_progressBar;
+  delete m_slider;
+  delete m_lcd;
 }
