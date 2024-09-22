@@ -25,6 +25,11 @@ window::window(int h, int w):QWidget()
   m_slider->setGeometry(10,60,150,20);
   //connect SIGNAL value change slider with SLOT display of lcd
   QObject::connect(m_slider,SIGNAL(valueChanged(int)),m_lcd,SLOT(display(int)));
+   //QProgressBar
+  m_progressBar=new QProgressBar(this);
+  m_progressBar->move(300,150);
+  // m_progressBar->setGeometry(20,50,10,20);
+  QObject::connect(m_slider,SIGNAL(valueChanged(int)),m_progressBar,SLOT(setValue(int)));
 }
 
 window::~window()
