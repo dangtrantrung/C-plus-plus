@@ -76,9 +76,9 @@ QMessageBox::question(this,"Q/A Dialog","Are you new <strong>Fresher C++ - Qt Fr
 QString nickname = QInputDialog::getText(this, "Nickname", "Your Nickname ?");
 //process return dialog
 bool ok = false;
-QString nickname1 = QInputDialog::getText(this, "Nickname", "Nickname 1 ?", QLineEdit::Normal, QString(), &ok);
-    if (ok && !nickname.isEmpty()){
-        QMessageBox::information(this, "Nickname", "Hello " + nickname + " !");
+QString nickname1 = QInputDialog::getText(this, "Nickname", "Nickname ?", QLineEdit::Normal, QString(), &ok);
+    if (ok && !nickname1.isEmpty()){
+        QMessageBox::information(this, "Nickname", "Hello " + nickname1 + " !");
     }else{
         QMessageBox::critical(this, "Nickname", "Hic hic, your nickname is empty and you chose No ?");
     }
@@ -111,4 +111,3 @@ window::~window()
       delete m_lcd;
       delete m_btn_dialog;
 }
-
