@@ -29,6 +29,19 @@ int main(int argc, char *argv[])
 
     w3.setLayouts(layout1);
     w3.show();
+    //QFormLayout
+    QWidget w4;
+    QLineEdit *First = new QLineEdit();
+    QLineEdit *Last  = new QLineEdit();
+    QLineEdit *Age = new QLineEdit();
+
+    QFormLayout *layout2=new QFormLayout();
+    layout2->addRow("First Name", First);
+    layout2->addRow("Last Name", Last);
+    layout2->addRow("Age", Age);
+
+    w4.setLayout(layout2);
+    w4.show();
 
 
 
