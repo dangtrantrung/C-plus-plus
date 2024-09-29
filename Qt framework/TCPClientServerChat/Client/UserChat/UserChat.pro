@@ -7,4 +7,4 @@ SOURCES += \
     main.cpp
 
 FORMS += \
-    C:/Users/DTTRUNG/Downloads/userwindow.ui
+    userChat.ui

@@ -1,9 +1,9 @@
 #include <QApplication>
-#include "userchat.h"
+#include "userChat.h"
 
 int main(int argc, char* argv[]) {
     QApplication app(argc, argv);
-    userchat w;
+    userChat w;
     w.show();
 
     return app.exec();

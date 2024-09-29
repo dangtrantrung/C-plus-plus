@@ -1,24 +1,25 @@
-#ifndef CUASONGUOIDUNG_H
-#define CUASONGUOIDUNG_H
+#ifndef userChat_H
+#define userChat_H
 
 #include <QtWidgets>
 #include <QtNetwork>
-#include "ui_userwindow.h"
+#include "ui_userChat.h"
 
-class userChat : public QWidget, private Ui::userwindow {
+class userChat : public QWidget, private Ui::userChat {
     Q_OBJECT
 
     public:
         userChat();
+        ~userChat();
 
     private slots:
         void press_connect_btn();
         void press_sendMessage_btn();
         void press_enter_sendMessage();
         void receiveData();
-        void connect();
+        void connectServer();
         void stopConnection();
-        void loiSocket(QAbstractSocket::SocketError loi);
+        void errorSocket(QAbstractSocket::SocketError error );
 
     private:
         QTcpSocket *socket; // server
